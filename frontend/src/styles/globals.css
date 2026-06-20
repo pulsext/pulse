@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+:root {
+  --font-primary: 'Caviche', cursive;
+}
+
+body {
+  font-family: var(--font-primary);
+  @apply bg-white dark:bg-slate-900 text-slate-900 dark:text-white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  @apply text-primary hover:text-secondary transition-colors;
+}
+
+button {
+  @apply font-caviche;
+}
